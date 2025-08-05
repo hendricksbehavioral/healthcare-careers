@@ -1,0 +1,1626 @@
+<!-- Urgent Hiring Banner -->
+<div class="bg-red-600 text-white py-2 text-center">
+    <div class="container mx-auto px-6">
+        <p class="text-sm font-semibold">🔥 URGENT HIRING: 100+ Remote Positions Available | Apply Today - Start Monday! | Immediate Response Guaranteed</p>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="gradient-bg text-white">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                    <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold">Behavioral Healthcare LLC</h1>
+                    <p class="text-sm opacity-90">Careers Portal</p>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#jobs" class="hover:text-purple-200 transition-colors">Open Positions</a>
+                <a href="#about" class="hover:text-purple-200 transition-colors">About Us</a>
+                <a href="#benefits" class="hover:text-purple-200 transition-colors">Benefits</a>
+                <a href="#contact" class="hover:text-purple-200 transition-colors">Contact</a>
+                <button id="adminPanelBtn" onclick="toggleAdminPanel()" class="bg-white bg-opacity-20 px-4 py-2 rounded-lg hover:bg-opacity-30 transition-colors hidden">
+                    Admin Panel
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Admin Panel -->
+<div id="adminPanel" class="admin-panel bg-yellow-50 border-b-2 border-yellow-200">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold text-gray-800">Admin Panel - Job Management</h2>
+            <button onclick="showAddJobForm()" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
+                + Add New Job
+            </button>
+        </div>
+        <div class="grid md:grid-cols-3 gap-4" id="adminJobsList">
+            <!-- Admin job cards will be populated here -->
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<section class="gradient-bg text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-5xl font-bold mb-6">🚨 HIRING NOW: 100+ Remote Positions!</h2>
+        <p class="text-xl mb-4 max-w-3xl mx-auto opacity-90">
+            <strong>IMMEDIATE HIRING:</strong> Data Analysts, Finance Specialists, Clinical Staff & More!
+            $45k-$85k Salaries • Work From Anywhere • Start This Week!
+        </p>
+        <div class="bg-yellow-400 text-black p-4 rounded-lg mb-6 max-w-2xl mx-auto">
+            <p class="font-bold text-lg">⚡ Get Job Alerts - Be First to Apply!</p>
+            <div class="flex flex-col sm:flex-row gap-2 mt-3">
+                <input type="email" id="jobAlertEmail" placeholder="Enter your email for instant job alerts" class="flex-1 px-4 py-2 rounded-lg border-0 text-black">
+                <button onclick="subscribeJobAlerts()" class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 font-semibold">
+                    Get Instant Alerts
+                </button>
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <div class="bg-white bg-opacity-20 px-6 py-3 rounded-lg">
+                <span class="text-lg font-semibold">🏠 Remote-First Company</span>
+            </div>
+            <div class="bg-white bg-opacity-20 px-6 py-3 rounded-lg">
+                <span class="text-lg font-semibold">💼 Work From Anywhere</span>
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button onclick="document.getElementById('jobs').scrollIntoView({behavior: 'smooth'})" 
+                    class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                View All 100+ Positions
+            </button>
+            <button onclick="showQuickApply()" 
+                    class="bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition-colors">
+                🚀 Quick Apply Now
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">Why Work With Us?</h3>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                At Behavioral Healthcare LLC, we believe in creating a supportive environment where both our team and clients can thrive - from anywhere in the world.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center p-6 card-hover bg-gray-50 rounded-lg">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                    </svg>
+                </div>
+                <h4 class="text-xl font-semibold mb-3">Meaningful Impact</h4>
+                <p class="text-gray-600">Make a real difference in people's lives through evidence-based behavioral healthcare services.</p>
+            </div>
+            <div class="text-center p-6 card-hover bg-gray-50 rounded-lg">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                    </svg>
+                </div>
+                <h4 class="text-xl font-semibold mb-3">Remote-First Culture</h4>
+                <p class="text-gray-600">Work from anywhere with flexible schedules, modern tools, and a supportive virtual team environment.</p>
+            </div>
+            <div class="text-center p-6 card-hover bg-gray-50 rounded-lg">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <h4 class="text-xl font-semibold mb-3">Work-Life Balance</h4>
+                <p class="text-gray-600">Enjoy true work-life balance with flexible hours, unlimited PTO, and comprehensive wellness programs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section id="benefits" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">Remote Work Benefits</h3>
+            <p class="text-lg text-gray-600">We invest in our remote team's success, health, and happiness.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-semibold text-gray-800 mb-2">Health & Wellness</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Medical, Dental, Vision</li>
+                    <li>• Mental Health Support</li>
+                    <li>• Home Office Stipend</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-semibold text-gray-800 mb-2">Flexible Time</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Unlimited PTO</li>
+                    <li>• Flexible Hours</li>
+                    <li>• 4-Day Work Week Options</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-semibold text-gray-800 mb-2">Financial</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Competitive Salary</li>
+                    <li>• 401(k) Matching</li>
+                    <li>• Internet Reimbursement</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-semibold text-gray-800 mb-2">Growth</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• Learning Budget</li>
+                    <li>• Virtual Conferences</li>
+                    <li>• Career Coaching</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lead Magnets Section -->
+<section class="py-16 bg-yellow-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">🎁 FREE Career Resources - Download Now!</h3>
+            <p class="text-lg text-gray-600">Get exclusive guides and tools to land your dream remote healthcare job</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-sm border-2 border-yellow-300">
+                <div class="text-center mb-4">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-2xl">📋</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800">Remote Work Guide</h4>
+                    <p class="text-gray-600 text-sm">Complete guide to landing remote healthcare jobs</p>
+                </div>
+                <ul class="text-sm text-gray-600 mb-4 space-y-1">
+                    <li>• 50+ Remote Job Boards</li>
+                    <li>• Interview Tips for Video Calls</li>
+                    <li>• Home Office Setup Guide</li>
+                    <li>• Salary Negotiation Scripts</li>
+                </ul>
+                <button onclick="downloadGuide('remote-work')" class="w-full bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-600 font-semibold">
+                    Download FREE Guide
+                </button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-2 border-green-300">
+                <div class="text-center mb-4">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-2xl">💰</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800">Salary Calculator</h4>
+                    <p class="text-gray-600 text-sm">Know your worth in remote healthcare</p>
+                </div>
+                <ul class="text-sm text-gray-600 mb-4 space-y-1">
+                    <li>• Position-Specific Ranges</li>
+                    <li>• Location Adjustments</li>
+                    <li>• Benefits Comparison</li>
+                    <li>• Negotiation Strategies</li>
+                </ul>
+                <button onclick="downloadGuide('salary-calculator')" class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 font-semibold">
+                    Get Salary Tool
+                </button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border-2 border-blue-300">
+                <div class="text-center mb-4">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-2xl">📝</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800">Resume Templates</h4>
+                    <p class="text-gray-600 text-sm">ATS-optimized healthcare resume templates</p>
+                </div>
+                <ul class="text-sm text-gray-600 mb-4 space-y-1">
+                    <li>• 10 Healthcare Templates</li>
+                    <li>• ATS-Friendly Formats</li>
+                    <li>• Cover Letter Templates</li>
+                    <li>• LinkedIn Profile Guide</li>
+                </ul>
+                <button onclick="downloadGuide('resume-templates')" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 font-semibold">
+                    Download Templates
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Success Stories Section -->
+<section class="py-16 bg-green-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">🌟 Recent Hires Share Their Success!</h3>
+            <p class="text-lg text-gray-600">Join hundreds of professionals who found their dream remote job with us</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-3">
+                        <span class="text-purple-600 font-bold">SM</span>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Sarah M.</h4>
+                        <p class="text-sm text-gray-600">Data Analyst - Hired Last Week</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 italic">"Applied Monday, interviewed Tuesday, started Thursday! Amazing remote culture and $68k salary. Best decision ever!"</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                        <span class="text-green-600 font-bold">MJ</span>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Michael J.</h4>
+                        <p class="text-sm text-gray-600">Finance Specialist - Started This Month</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 italic">"Work-life balance is incredible! $62k salary, flexible hours, and I work from my home office. Highly recommend!"</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                        <span class="text-blue-600 font-bold">LR</span>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Lisa R.</h4>
+                        <p class="text-sm text-gray-600">LCSW - Remote Therapist</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 italic">"Making $78k helping clients via teletherapy. The support team is amazing and technology makes everything seamless!"</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Jobs Section -->
+<section id="jobs" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">🔥 100+ Remote Positions - Apply Today!</h3>
+            <p class="text-lg text-gray-600 mb-4">Immediate hiring for qualified candidates • Fast-track interviews • Start within days!</p>
+            <div class="bg-red-100 border border-red-300 rounded-lg p-4 max-w-2xl mx-auto">
+                <p class="text-red-800 font-semibold">⏰ URGENT: Many positions closing this week due to high demand!</p>
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto space-y-6" id="jobsContainer">
+            <!-- Job listings will be populated here -->
+        </div>
+    </div>
+</section>
+
+<!-- Telegram Ads Section -->
+<section class="py-16 bg-blue-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">📱 Join Our Telegram Channel!</h3>
+            <p class="text-lg text-gray-600 mb-6">Get instant job alerts, career tips, and exclusive opportunities delivered directly to your phone</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button onclick="joinTelegram()" class="bg-blue-500 text-white px-8 py-4 rounded-lg hover:bg-blue-600 transition-colors flex items-center space-x-3 text-lg font-semibold">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                    <span>Join Telegram Channel</span>
+                </button>
+                <button onclick="telegramBot()" class="bg-gray-600 text-white px-8 py-4 rounded-lg hover:bg-gray-700 transition-colors flex items-center space-x-3 text-lg font-semibold">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    <span>Chat with Bot</span>
+                </button>
+            </div>
+            <div class="mt-6 bg-white p-4 rounded-lg max-w-md mx-auto">
+                <p class="text-sm text-gray-600 mb-2"><strong>Telegram Benefits:</strong></p>
+                <ul class="text-sm text-gray-700 space-y-1">
+                    <li>• Instant job notifications</li>
+                    <li>• Direct chat with HR team</li>
+                    <li>• Exclusive remote opportunities</li>
+                    <li>• Career tips and resources</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Social Sharing Section -->
+<section class="py-16 bg-purple-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">📢 Help Others Find Remote Work!</h3>
+            <p class="text-lg text-gray-600 mb-6">Share these opportunities with your network and help more people find remote healthcare jobs</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button onclick="shareOnLinkedIn()" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+                    </svg>
+                    <span>Share on LinkedIn</span>
+                </button>
+                <button onclick="shareOnFacebook()" class="bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-900 transition-colors flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"/>
+                    </svg>
+                    <span>Share on Facebook</span>
+                </button>
+                <button onclick="shareOnTwitter()" class="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                    </svg>
+                    <span>Share on X</span>
+                </button>
+                <button onclick="copyJobLink()" class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                    </svg>
+                    <span>Copy Link</span>
+                </button>
+            </div>
+            <div class="mt-6 bg-white p-4 rounded-lg max-w-md mx-auto">
+                <p class="text-sm text-gray-600 mb-2"><strong>Referral Bonus:</strong> Know someone perfect for these roles?</p>
+                <p class="text-sm text-green-700 font-semibold">Earn $500 for successful referrals!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="max-w-2xl mx-auto text-center">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">Ready to Join Our Remote Team?</h3>
+            <p class="text-lg text-gray-600 mb-8">
+                Have questions about our remote positions or want to learn more about working with us? We'd love to hear from you.
+            </p>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="text-left">
+                        <h4 class="font-semibold text-gray-800 mb-2">HR Department</h4>
+                        <p class="text-gray-600">cindyturpin61@proton.me</p>
+                        <p class="text-gray-600">(479) 551-9860</p>
+                    </div>
+                    <div class="text-left">
+                        <h4 class="font-semibold text-gray-800 mb-2">Remote Work Support</h4>
+                        <p class="text-gray-600">Available Worldwide</p>
+                        <p class="text-gray-600">Flexible Time Zones</p>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <button onclick="window.open('mailto:cindyturpin61@proton.me?subject=Remote Career Inquiry', '_blank')" 
+                            class="flex-1 bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors">
+                        Send Us an Email
+                    </button>
+                    <button onclick="showChatbot()" 
+                            class="flex-1 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
+                        💬 Quick Chat
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+        <div class="flex items-center justify-center space-x-3 mb-4">
+            <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+            </div>
+            <h4 class="text-lg font-semibold">Behavioral Healthcare LLC</h4>
+        </div>
+        <p class="text-gray-400 mb-4">Transforming lives through compassionate behavioral healthcare - remotely and globally.</p>
+        <p class="text-sm text-gray-500">© 2024 Behavioral Healthcare LLC. All rights reserved. | Equal Opportunity Employer | Remote-First Company</p>
+    </div>
+</footer>
+
+<!-- Admin Login Modal -->
+<div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-lg max-w-md w-full p-6">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">Admin Login</h3>
+        <div class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Username</label>
+                <input type="text" id="adminUsername" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Enter username">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                <input type="password" id="adminPassword" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Enter password">
+            </div>
+            <div class="bg-blue-50 p-3 rounded-lg">
+                <p class="text-sm text-blue-800"><strong>Demo Credentials:</strong></p>
+                <p class="text-sm text-blue-600">Username: admin</p>
+                <p class="text-sm text-blue-600">Password: healthcare123</p>
+            </div>
+            <div class="flex space-x-3">
+                <button onclick="adminLogin()" class="flex-1 bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                    Login
+                </button>
+                <button onclick="closeLoginModal()" class="flex-1 bg-gray-300 text-gray-700 py-2 rounded-lg hover:bg-gray-400 transition-colors">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Job Form Modal -->
+<div id="jobFormModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="p-6">
+            <div class="flex justify-between items-start mb-4">
+                <h3 id="jobFormTitle" class="text-2xl font-bold text-gray-800">Add New Job</h3>
+                <button onclick="closeJobForm()" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <form id="jobForm" class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Job Title *</label>
+                        <input type="text" id="jobTitle" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Salary Range *</label>
+                        <input type="text" id="jobSalary" required placeholder="e.g., $50k-$70k" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Work Type *</label>
+                        <select id="jobType" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <option value="">Select type</option>
+                            <option value="Full-time">Full-time</option>
+                            <option value="Part-time">Part-time</option>
+                            <option value="Contract">Contract</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Location Type *</label>
+                        <select id="jobLocation" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <option value="">Select location</option>
+                            <option value="Remote">Remote</option>
+                            <option value="On-site">On-site</option>
+                            <option value="Hybrid">Hybrid</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Short Description *</label>
+                    <textarea id="jobDescription" required rows="2" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Brief job description for the listing"></textarea>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Detailed Description *</label>
+                    <textarea id="jobDetails" required rows="8" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Detailed job description, requirements, responsibilities, etc."></textarea>
+                </div>
+                <div class="flex space-x-3 pt-4">
+                    <button type="submit" class="flex-1 bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">
+                        Save Job
+                    </button>
+                    <button type="button" onclick="closeJobForm()" class="flex-1 bg-gray-300 text-gray-700 py-3 rounded-lg hover:bg-gray-400 transition-colors">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Job Details Modal -->
+<div id="jobModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="p-6">
+            <div class="flex justify-between items-start mb-4">
+                <h3 id="modalTitle" class="text-2xl font-bold text-gray-800"></h3>
+                <button onclick="closeJobModal()" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="modalContent" class="space-y-4"></div>
+            <div class="mt-6 pt-6 border-t">
+                <button onclick="showApplicationForm()" class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition-colors w-full">
+                    Apply for This Position
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Apply Modal -->
+<div id="quickApplyModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-lg max-w-md w-full p-6">
+        <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">🚀 Quick Apply - Get Hired Fast!</h3>
+            <p class="text-gray-600">Submit your info and we'll match you with the best remote positions</p>
+        </div>
+        <form id="quickApplyForm" class="space-y-4">
+            <div>
+                <input type="text" id="quickName" required placeholder="Full Name *" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+            </div>
+            <div>
+                <input type="email" id="quickEmail" required placeholder="Email Address *" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+            </div>
+            <div>
+                <input type="tel" id="quickPhone" required placeholder="Phone Number *" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+            </div>
+            <div>
+                <select id="quickPosition" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    <option value="">Select Position Type *</option>
+                    <option value="data-analyst">Data Analyst ($55k-$75k)</option>
+                    <option value="finance">Finance Specialist ($50k-$70k)</option>
+                    <option value="clinical">Clinical/Therapy ($65k-$85k)</option>
+                    <option value="marketing">Marketing ($45k-$60k)</option>
+                    <option value="hr">Human Resources ($48k-$65k)</option>
+                    <option value="any">Any Position - Best Match</option>
+                </select>
+            </div>
+            <div>
+                <textarea id="quickExperience" rows="3" placeholder="Brief experience summary (optional)" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+            </div>
+            <div class="bg-green-50 p-3 rounded-lg">
+                <p class="text-sm text-green-800"><strong>⚡ Fast Track Promise:</strong> We'll contact qualified candidates within 24 hours!</p>
+            </div>
+            <div class="flex space-x-3">
+                <button type="submit" class="flex-1 bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold">
+                    Submit Quick Application
+                </button>
+                <button type="button" onclick="closeQuickApply()" class="flex-1 bg-gray-300 text-gray-700 py-3 rounded-lg hover:bg-gray-400 transition-colors">
+                    Cancel
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Chatbot Modal -->
+<div id="chatbotModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-lg max-w-md w-full max-h-[80vh] overflow-hidden">
+        <div class="bg-green-600 text-white p-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                    <span class="text-sm">🤖</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold">HR Assistant</h3>
+                    <p class="text-xs opacity-90">Online now</p>
+                </div>
+            </div>
+            <button onclick="closeChatbot()" class="text-white hover:text-gray-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="chatMessages" class="h-80 overflow-y-auto p-4 space-y-3 bg-gray-50">
+            <div class="flex items-start space-x-2">
+                <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span class="text-sm">🤖</span>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm max-w-xs">
+                    <p class="text-sm">Hi! I'm here to help with your remote career questions. What would you like to know?</p>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 border-t">
+            <div class="grid grid-cols-2 gap-2 mb-3">
+                <button onclick="sendQuickMessage('What positions are available?')" class="bg-gray-100 text-gray-700 px-3 py-2 rounded-lg text-sm hover:bg-gray-200 transition-colors">
+                    Available positions?
+                </button>
+                <button onclick="sendQuickMessage('What are the salary ranges?')" class="bg-gray-100 text-gray-700 px-3 py-2 rounded-lg text-sm hover:bg-gray-200 transition-colors">
+                    Salary ranges?
+                </button>
+                <button onclick="sendQuickMessage('How do I apply?')" class="bg-gray-100 text-gray-700 px-3 py-2 rounded-lg text-sm hover:bg-gray-200 transition-colors">
+                    How to apply?
+                </button>
+                <button onclick="sendQuickMessage('Remote work benefits?')" class="bg-gray-100 text-gray-700 px-3 py-2 rounded-lg text-sm hover:bg-gray-200 transition-colors">
+                    Remote benefits?
+                </button>
+            </div>
+            <div class="flex space-x-2">
+                <input type="text" id="chatInput" placeholder="Type your question..." class="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" onkeypress="handleChatEnter(event)">
+                <button onclick="sendChatMessage()" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Employment Application Form Modal -->
+<div id="applicationModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="p-6">
+            <div class="flex justify-between items-start mb-4">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800">Employment Application</h3>
+                    <p id="applicationJobTitle" class="text-lg text-purple-600 font-medium"></p>
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-3 mt-2">
+                        <p class="text-sm text-red-800"><strong>⚠️ DEMO ONLY:</strong> This is a demonstration form. Do not submit real personal information, SSN, or sensitive documents.</p>
+                    </div>
+                </div>
+                <button onclick="closeApplicationForm()" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <form id="applicationForm" class="space-y-6">
+                <!-- Personal Information Section -->
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Personal Information</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
+                            <input type="text" id="firstName" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
+                            <input type="text" id="lastName" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+                            <input type="email" id="email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+                            <input type="tel" id="phone" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Address *</label>
+                        <input type="text" id="address" required placeholder="Street Address" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 mb-2">
+                        <div class="grid md:grid-cols-3 gap-2">
+                            <input type="text" id="city" required placeholder="City" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="text" id="state" required placeholder="State" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="text" id="zipCode" required placeholder="ZIP Code" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Questions Section -->
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Security Questions</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Why are you interested in this specific position? *</label>
+                            <textarea id="whyPosition" required rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">What experience do you have in behavioral healthcare? *</label>
+                            <textarea id="experience" required rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">How do you handle challenging situations with clients? *</label>
+                            <textarea id="challengingSituations" required rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">What motivates you to work in mental health services? *</label>
+                            <textarea id="motivation" required rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Employment Information Section -->
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Employment Information</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Desired Salary Range</label>
+                            <input type="text" id="salaryRange" placeholder="e.g., $50,000 - $60,000" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Available Start Date *</label>
+                            <input type="date" id="startDate" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Are you authorized to work in the US? *</label>
+                            <select id="workAuthorization" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                <option value="">Select...</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Do you have reliable internet for remote work? *</label>
+                            <select id="transportation" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                <option value="">Select...</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Upload Section -->
+                <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Document Upload</h4>
+                    <div class="bg-yellow-100 border border-yellow-300 rounded-lg p-3 mb-4">
+                        <p class="text-sm text-yellow-800"><strong>⚠️ DEMO WARNING:</strong> These file uploads are for demonstration only. Do not upload real documents containing sensitive information.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Resume/CV * (Demo Only)</label>
+                            <input type="file" id="resume" accept=".pdf,.doc,.docx" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <p class="text-xs text-gray-500 mt-1">PDF, DOC, or DOCX format</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Cover Letter (Demo Only)</label>
+                            <input type="file" id="coverLetter" accept=".pdf,.doc,.docx" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <p class="text-xs text-gray-500 mt-1">PDF, DOC, or DOCX format</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 p-3 bg-red-100 border border-red-300 rounded-lg">
+                        <p class="text-sm text-red-800"><strong>IMPORTANT:</strong> For real applications, sensitive documents (ID, SSN verification) would be collected through secure, encrypted systems after initial screening. This demo cannot securely handle such information.</p>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Education</h4>
+                    <div class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Highest Level of Education *</label>
+                                <select id="education" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                    <option value="">Select...</option>
+                                    <option value="high-school">High School Diploma/GED</option>
+                                    <option value="associate">Associate Degree</option>
+                                    <option value="bachelor">Bachelor's Degree</option>
+                                    <option value="master">Master's Degree</option>
+                                    <option value="doctorate">Doctorate/PhD</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Field of Study</label>
+                                <input type="text" id="fieldOfStudy" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">School/University Name</label>
+                                <input type="text" id="schoolName" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Graduation Year</label>
+                                <input type="number" id="graduationYear" min="1950" max="2030" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications & Licenses Section -->
+                <div class="bg-indigo-50 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Professional Certifications & Licenses</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Professional Licenses (e.g., LCSW, LPC, etc.)</label>
+                            <textarea id="licenses" rows="2" placeholder="List any professional licenses you hold" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Certifications (e.g., CPR, First Aid, etc.)</label>
+                            <textarea id="certifications" rows="2" placeholder="List any relevant certifications" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- References Section -->
+                <div class="bg-teal-50 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Professional References</h4>
+                    <p class="text-sm text-gray-600 mb-4">Please provide at least 2 professional references:</p>
+                    
+                    <!-- Reference 1 -->
+                    <div class="mb-4 p-3 border border-gray-200 rounded-lg">
+                        <h5 class="font-medium text-gray-700 mb-2">Reference 1</h5>
+                        <div class="grid md:grid-cols-2 gap-3">
+                            <input type="text" id="ref1Name" placeholder="Full Name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="text" id="ref1Title" placeholder="Job Title" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="text" id="ref1Company" placeholder="Company/Organization" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="tel" id="ref1Phone" placeholder="Phone Number" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="email" id="ref1Email" placeholder="Email Address" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="text" id="ref1Relationship" placeholder="Relationship (e.g., Former Supervisor)" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                    </div>
+
+                    <!-- Reference 2 -->
+                    <div class="mb-4 p-3 border border-gray-200 rounded-lg">
+                        <h5 class="font-medium text-gray-700 mb-2">Reference 2</h5>
+                        <div class="grid md:grid-cols-2 gap-3">
+                            <input type="text" id="ref2Name" placeholder="Full Name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="text" id="ref2Title" placeholder="Job Title" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="text" id="ref2Company" placeholder="Company/Organization" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="tel" id="ref2Phone" placeholder="Phone Number" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="email" id="ref2Email" placeholder="Email Address" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="text" id="ref2Relationship" placeholder="Relationship (e.g., Former Colleague)" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agreement Section -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Agreements & Consent</h4>
+                    <div class="space-y-3">
+                        <label class="flex items-start space-x-3">
+                            <input type="checkbox" id="truthfulInfo" required class="mt-1 h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded">
+                            <span class="text-sm text-gray-700">I certify that all information provided in this application is true and complete to the best of my knowledge. *</span>
+                        </label>
+                        <label class="flex items-start space-x-3">
+                            <input type="checkbox" id="backgroundCheck" required class="mt-1 h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded">
+                            <span class="text-sm text-gray-700">I consent to a background check and reference verification as part of the employment process. *</span>
+                        </label>
+                        <label class="flex items-start space-x-3">
+                            <input type="checkbox" id="drugTest" required class="mt-1 h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded">
+                            <span class="text-sm text-gray-700">I understand that employment may be contingent upon passing a drug screening test. *</span>
+                        </label>
+                        <label class="flex items-start space-x-3">
+                            <input type="checkbox" id="contactConsent" required class="mt-1 h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded">
+                            <span class="text-sm text-gray-700">I give permission for Behavioral Healthcare LLC to contact me regarding this application and potential employment opportunities. *</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Section -->
+                <div class="flex space-x-3 pt-4">
+                    <button type="submit" class="flex-1 bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold">
+                        Submit Application (Demo)
+                    </button>
+                    <button type="button" onclick="closeApplicationForm()" class="flex-1 bg-gray-300 text-gray-700 py-3 rounded-lg hover:bg-gray-400 transition-colors">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Admin state
+    let isAdminLoggedIn = false;
+    let currentEditingJob = null;
+
+    // Job data storage with remote positions
+    let jobsData = [
+        {
+            id: 'data-analyst',
+            title: 'Remote Data Analyst',
+            description: 'Analyze healthcare data to improve patient outcomes and operational efficiency.',
+            salary: '$55k-$75k',
+            type: 'Full-time',
+            location: 'Remote',
+            details: `<div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Position Overview</h4>
+                    <p class="text-gray-600">Join our remote team as a Data Analyst specializing in behavioral healthcare analytics. You'll work with clinical and operational data to drive insights that improve patient care and business outcomes.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Key Responsibilities</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Analyze patient outcome data and treatment effectiveness</li>
+                        <li>• Create dashboards and reports for clinical teams</li>
+                        <li>• Identify trends in behavioral health data</li>
+                        <li>• Support quality improvement initiatives</li>
+                        <li>• Collaborate with clinical staff remotely</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Requirements</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Bachelor's degree in Data Science, Statistics, or related field</li>
+                        <li>• 2+ years of data analysis experience</li>
+                        <li>• Proficiency in SQL, Python, or R</li>
+                        <li>• Experience with Tableau, Power BI, or similar tools</li>
+                        <li>• Strong communication skills for remote collaboration</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Remote Benefits</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Competitive salary: $55,000 - $75,000</li>
+                        <li>• Work from anywhere in the US</li>
+                        <li>• Home office setup stipend</li>
+                        <li>• Flexible working hours</li>
+                        <li>• Professional development budget</li>
+                    </ul>
+                </div>
+            </div>`
+        },
+        {
+            id: 'data-systems',
+            title: 'Remote Data Systems Specialist',
+            description: 'Manage and optimize healthcare data systems and databases.',
+            salary: '$65k-$85k',
+            type: 'Full-time',
+            location: 'Remote',
+            details: `<div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Position Overview</h4>
+                    <p class="text-gray-600">We're seeking a Data Systems Specialist to manage our healthcare data infrastructure remotely. You'll ensure data integrity, optimize system performance, and support our clinical teams with reliable data systems.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Key Responsibilities</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Maintain and optimize healthcare databases</li>
+                        <li>• Ensure HIPAA compliance in data systems</li>
+                        <li>• Implement data backup and recovery procedures</li>
+                        <li>• Support EHR system integration</li>
+                        <li>• Troubleshoot system issues remotely</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Requirements</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Bachelor's degree in Information Systems or related field</li>
+                        <li>• 3+ years of database administration experience</li>
+                        <li>• Knowledge of healthcare data standards (HL7, FHIR)</li>
+                        <li>• Experience with SQL Server, MySQL, or PostgreSQL</li>
+                        <li>• Understanding of HIPAA compliance requirements</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Remote Benefits</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Competitive salary: $65,000 - $85,000</li>
+                        <li>• 100% remote work environment</li>
+                        <li>• Technology equipment provided</li>
+                        <li>• Comprehensive health benefits</li>
+                        <li>• Unlimited PTO policy</li>
+                    </ul>
+                </div>
+            </div>`
+        },
+        {
+            id: 'finance-analyst',
+            title: 'Remote Finance Analyst',
+            description: 'Analyze financial data and support budgeting for healthcare operations.',
+            salary: '$50k-$70k',
+            type: 'Full-time',
+            location: 'Remote',
+            details: `<div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Position Overview</h4>
+                    <p class="text-gray-600">Join our finance team as a remote Finance Analyst focused on healthcare operations. You'll analyze financial performance, support budgeting processes, and provide insights to drive business decisions.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Key Responsibilities</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Analyze revenue and expense trends</li>
+                        <li>• Prepare monthly financial reports</li>
+                        <li>• Support annual budgeting process</li>
+                        <li>• Monitor insurance reimbursement rates</li>
+                        <li>• Assist with financial forecasting</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Requirements</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Bachelor's degree in Finance, Accounting, or related field</li>
+                        <li>• 2+ years of financial analysis experience</li>
+                        <li>• Advanced Excel skills required</li>
+                        <li>• Experience with financial software (QuickBooks, SAP, etc.)</li>
+                        <li>• Healthcare finance experience preferred</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Remote Benefits</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Competitive salary: $50,000 - $70,000</li>
+                        <li>• Flexible remote work schedule</li>
+                        <li>• Professional certification support</li>
+                        <li>• 401(k) with company matching</li>
+                        <li>• Work-life balance focus</li>
+                    </ul>
+                </div>
+            </div>`
+        },
+        {
+            id: 'lcsw',
+            title: 'Remote Licensed Clinical Social Worker (LCSW)',
+            description: 'Provide teletherapy services to clients with behavioral health needs.',
+            salary: '$65k-$85k',
+            type: 'Full-time',
+            location: 'Remote',
+            details: `<div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Position Overview</h4>
+                    <p class="text-gray-600">We are seeking a compassionate and experienced Licensed Clinical Social Worker to provide remote therapy services. You'll conduct teletherapy sessions and support clients with various behavioral health needs from the comfort of your home office.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Key Responsibilities</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Conduct virtual therapy sessions via secure platforms</li>
+                        <li>• Develop and implement individualized treatment plans</li>
+                        <li>• Provide individual, group, and family teletherapy</li>
+                        <li>• Maintain accurate clinical documentation</li>
+                        <li>• Collaborate with multidisciplinary team remotely</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Requirements</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Master's degree in Social Work from CSWE-accredited program</li>
+                        <li>• Current LCSW license in good standing</li>
+                        <li>• 2+ years of clinical experience preferred</li>
+                        <li>• Experience with teletherapy platforms</li>
+                        <li>• Strong technology skills for remote work</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Remote Benefits</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Competitive salary: $65,000 - $85,000</li>
+                        <li>• Comprehensive benefits package</li>
+                        <li>• Professional development opportunities</li>
+                        <li>• Flexible scheduling options</li>
+                        <li>• Technology stipend for home office</li>
+                    </ul>
+                </div>
+            </div>`
+        },
+        {
+            id: 'marketing-coordinator',
+            title: 'Remote Marketing Coordinator',
+            description: 'Develop and execute digital marketing strategies for healthcare services.',
+            salary: '$45k-$60k',
+            type: 'Full-time',
+            location: 'Remote',
+            details: `<div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Position Overview</h4>
+                    <p class="text-gray-600">Join our marketing team as a remote Marketing Coordinator specializing in healthcare marketing. You'll develop digital marketing campaigns, manage social media, and help grow our behavioral healthcare services.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Key Responsibilities</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Develop and execute digital marketing campaigns</li>
+                        <li>• Manage social media accounts and content</li>
+                        <li>• Create marketing materials and website content</li>
+                        <li>• Analyze marketing performance metrics</li>
+                        <li>• Support community outreach initiatives</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Requirements</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Bachelor's degree in Marketing, Communications, or related field</li>
+                        <li>• 1-3 years of digital marketing experience</li>
+                        <li>• Experience with social media management</li>
+                        <li>• Knowledge of Google Analytics and SEO</li>
+                        <li>• Healthcare marketing experience preferred</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Remote Benefits</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Competitive salary: $45,000 - $60,000</li>
+                        <li>• Creative freedom in remote environment</li>
+                        <li>• Marketing tools and software provided</li>
+                        <li>• Professional development budget</li>
+                        <li>• Flexible work schedule</li>
+                    </ul>
+                </div>
+            </div>`
+        },
+        {
+            id: 'hr-specialist',
+            title: 'Remote HR Specialist',
+            description: 'Support human resources functions for our growing remote team.',
+            salary: '$48k-$65k',
+            type: 'Full-time',
+            location: 'Remote',
+            details: `<div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Position Overview</h4>
+                    <p class="text-gray-600">We're looking for an HR Specialist to support our remote workforce. You'll handle recruitment, employee relations, and HR operations while working from anywhere in the US.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Key Responsibilities</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Manage remote recruitment and onboarding</li>
+                        <li>• Support employee relations and engagement</li>
+                        <li>• Maintain HR records and compliance</li>
+                        <li>• Coordinate benefits administration</li>
+                        <li>• Assist with performance management processes</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Requirements</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Bachelor's degree in HR, Business, or related field</li>
+                        <li>• 2+ years of HR experience</li>
+                        <li>• Knowledge of employment law and compliance</li>
+                        <li>• Experience with HRIS systems</li>
+                        <li>• Strong communication skills for remote work</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Remote Benefits</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Competitive salary: $48,000 - $65,000</li>
+                        <li>• Work from anywhere in the US</li>
+                        <li>• HR certification support</li>
+                        <li>• Comprehensive benefits package</li>
+                        <li>• Collaborative remote team culture</li>
+                    </ul>
+                </div>
+            </div>`
+        }
+    ];
+
+    // Admin Login Functions
+    function showAdminLogin() {
+        document.getElementById('loginModal').classList.remove('hidden');
+        document.getElementById('loginModal').classList.add('flex');
+    }
+
+    function closeLoginModal() {
+        document.getElementById('loginModal').classList.add('hidden');
+        document.getElementById('loginModal').classList.remove('flex');
+        document.getElementById('adminUsername').value = '';
+        document.getElementById('adminPassword').value = '';
+    }
+
+    function adminLogin() {
+        const username = document.getElementById('adminUsername').value;
+        const password = document.getElementById('adminPassword').value;
+
+        if (username === 'admin' && password === 'healthcare123') {
+            isAdminLoggedIn = true;
+            document.getElementById('adminLoginBtn').classList.add('hidden');
+            document.getElementById('adminLogoutBtn').classList.remove('hidden');
+            document.getElementById('adminPanelBtn').classList.remove('hidden');
+            closeLoginModal();
+            showAdminPanel();
+            alert('Welcome to the Admin Panel! You can now add, edit, and delete job postings.');
+        } else {
+            alert('Invalid credentials. Please use:\nUsername: admin\nPassword: healthcare123');
+        }
+    }
+
+    function adminLogout() {
+        isAdminLoggedIn = false;
+        document.getElementById('adminLoginBtn').classList.remove('hidden');
+        document.getElementById('adminLogoutBtn').classList.add('hidden');
+        document.getElementById('adminPanelBtn').classList.add('hidden');
+        document.getElementById('adminPanel').classList.remove('active');
+    }
+
+    function toggleAdminPanel() {
+        if (!isAdminLoggedIn) return;
+        const panel = document.getElementById('adminPanel');
+        panel.classList.toggle('active');
+        if (panel.classList.contains('active')) {
+            renderAdminJobs();
+        }
+    }
+
+    function showAdminPanel() {
+        if (!isAdminLoggedIn) return;
+        document.getElementById('adminPanel').classList.add('active');
+        renderAdminJobs();
+    }
+
+    // Job Management Functions
+    function renderJobs() {
+        const container = document.getElementById('jobsContainer');
+        container.innerHTML = '';
+
+        jobsData.forEach(job => {
+            const jobCard = document.createElement('div');
+            jobCard.className = 'bg-gray-50 rounded-lg p-6 card-hover';
+            
+            // Determine location badge color
+            let locationColor = 'blue';
+            if (job.location === 'Remote') locationColor = 'green';
+            else if (job.location === 'On-site') locationColor = 'orange';
+            else if (job.location === 'Hybrid') locationColor = 'blue';
+            
+            jobCard.innerHTML = `
+                <div class="flex flex-col md:flex-row md:items-center justify-between">
+                    <div class="flex-1">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">${job.title}</h4>
+                        <p class="text-gray-600 mb-3">${job.description}</p>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">${job.type}</span>
+                            <span class="bg-${locationColor}-100 text-${locationColor}-800 px-3 py-1 rounded-full text-sm">🏠 ${job.location}</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">${job.salary}</span>
+                        </div>
+                    </div>
+                    <button onclick="showJobDetails('${job.id}')" class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors mt-4 md:mt-0">
+                        View Details
+                    </button>
+                </div>
+            `;
+            container.appendChild(jobCard);
+        });
+    }
+
+    function renderAdminJobs() {
+        const container = document.getElementById('adminJobsList');
+        container.innerHTML = '';
+
+        jobsData.forEach(job => {
+            const adminCard = document.createElement('div');
+            adminCard.className = 'bg-white p-4 rounded-lg shadow-sm border';
+            adminCard.innerHTML = `
+                <h4 class="font-semibold text-gray-800 mb-2">${job.title}</h4>
+                <p class="text-sm text-gray-600 mb-3">${job.salary} • ${job.type} • ${job.location}</p>
+                <div class="flex space-x-2">
+                    <button onclick="editJob('${job.id}')" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700 transition-colors">
+                        Edit
+                    </button>
+                    <button onclick="deleteJob('${job.id}')" class="bg-red-600 text-white px-3 py-1 rounded text-sm hover:bg-red-700 transition-colors">
+                        Delete
+                    </button>
+                </div>
+            `;
+            container.appendChild(adminCard);
+        });
+    }
+
+    function showAddJobForm() {
+        if (!isAdminLoggedIn) return;
+        currentEditingJob = null;
+        document.getElementById('jobFormTitle').textContent = 'Add New Job';
+        document.getElementById('jobForm').reset();
+        document.getElementById('jobFormModal').classList.remove('hidden');
+        document.getElementById('jobFormModal').classList.add('flex');
+    }
+
+    function editJob(jobId) {
+        if (!isAdminLoggedIn) return;
+        const job = jobsData.find(j => j.id === jobId);
+        if (!job) return;
+
+        currentEditingJob = jobId;
+        document.getElementById('jobFormTitle').textContent = 'Edit Job';
+        document.getElementById('jobTitle').value = job.title;
+        document.getElementById('jobSalary').value = job.salary;
+        document.getElementById('jobType').value = job.type;
+        document.getElementById('jobLocation').value = job.location;
+        document.getElementById('jobDescription').value = job.description;
+        document.getElementById('jobDetails').value = job.details.replace(/<[^>]*>/g, '').replace(/&bull;/g, '•');
+        
+        document.getElementById('jobFormModal').classList.remove('hidden');
+        document.getElementById('jobFormModal').classList.add('flex');
+    }
+
+    function deleteJob(jobId) {
+        if (!isAdminLoggedIn) return;
+        if (confirm('Are you sure you want to delete this job posting?')) {
+            jobsData = jobsData.filter(job => job.id !== jobId);
+            renderJobs();
+            renderAdminJobs();
+        }
+    }
+
+    function closeJobForm() {
+        document.getElementById('jobFormModal').classList.add('hidden');
+        document.getElementById('jobFormModal').classList.remove('flex');
+        currentEditingJob = null;
+    }
+
+    // Job form submission
+    document.getElementById('jobForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (!isAdminLoggedIn) return;
+
+        const formData = {
+            title: document.getElementById('jobTitle').value,
+            salary: document.getElementById('jobSalary').value,
+            type: document.getElementById('jobType').value,
+            location: document.getElementById('jobLocation').value,
+            description: document.getElementById('jobDescription').value,
+            details: `<div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Position Details</h4>
+                    <p class="text-gray-600">${document.getElementById('jobDetails').value.replace(/\n/g, '<br>')}</p>
+                </div>
+            </div>`
+        };
+
+        if (currentEditingJob) {
+            // Edit existing job
+            const jobIndex = jobsData.findIndex(job => job.id === currentEditingJob);
+            if (jobIndex !== -1) {
+                jobsData[jobIndex] = { ...jobsData[jobIndex], ...formData };
+            }
+        } else {
+            // Add new job
+            const newJob = {
+                id: 'job_' + Date.now(),
+                ...formData
+            };
+            jobsData.push(newJob);
+        }
+
+        renderJobs();
+        renderAdminJobs();
+        closeJobForm();
+        alert(currentEditingJob ? 'Job updated successfully!' : 'New job added successfully!');
+    });
+
+    // Public job viewing functions
+    function showJobDetails(jobId) {
+        const job = jobsData.find(j => j.id === jobId);
+        if (job) {
+            document.getElementById('modalTitle').textContent = job.title;
+            document.getElementById('modalContent').innerHTML = job.details;
+            document.getElementById('jobModal').classList.remove('hidden');
+            document.getElementById('jobModal').classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeJobModal() {
+        document.getElementById('jobModal').classList.add('hidden');
+        document.getElementById('jobModal').classList.remove('flex');
+        document.body.style.overflow = 'auto';
+    }
+
+    function applyForJob() {
+        const jobTitle = document.getElementById('modalTitle').textContent;
+        const subject = `Application for ${jobTitle}`;
+        const body = `Dear Hiring Manager,\n\nI am interested in applying for the ${jobTitle} position at Behavioral Healthcare LLC. Please find my resume attached.\n\nThank you for your consideration.\n\nBest regards,`;
+        
+        window.open(`mailto:cindyturpin61@proton.me?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, '_blank');
+    }
+
+    // Application Form Functions
+    function showApplicationForm() {
+        const jobTitle = document.getElementById('modalTitle').textContent;
+        document.getElementById('applicationJobTitle').textContent = `Position: ${jobTitle}`;
+        document.getElementById('applicationModal').classList.remove('hidden');
+        document.getElementById('applicationModal').classList.add('flex');
+        closeJobModal(); // Close the job details modal
+    }
+
+    function closeApplicationForm() {
+        document.getElementById('applicationModal').classList.add('hidden');
+        document.getElementById('applicationModal').classList.remove('flex');
+        document.getElementById('applicationForm').reset();
+    }
+
+    // Application form submission
+    document.getElementById('applicationForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Collect form data
+        const formData = {
+            // Personal Information
+            firstName: document.getElementById('firstName').value,
+            lastName: document.getElementById('lastName').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            address: document.getElementById('address').value,
+            city: document.getElementById('city').value,
+            state: document.getElementById('state').value,
+            zipCode: document.getElementById('zipCode').value,
+            
+            // Security Questions
+            whyPosition: document.getElementById('whyPosition').value,
+            experience: document.getElementById('experience').value,
+            challengingSituations: document.getElementById('challengingSituations').value,
+            motivation: document.getElementById('motivation').value,
+            
+            // Employment Information
+            salaryRange: document.getElementById('salaryRange').value,
+            startDate: document.getElementById('startDate').value,
+            workAuthorization: document.getElementById('workAuthorization').value,
+            transportation: document.getElementById('transportation').value,
+            
+            // Education
+            education: document.getElementById('education').value,
+            fieldOfStudy: document.getElementById('fieldOfStudy').value,
+            schoolName: document.getElementById('schoolName').value,
+            graduationYear: document.getElementById('graduationYear').value,
+            
+            // Certifications
+            licenses: document.getElementById('licenses').value,
+            certifications: document.getElementById('certifications').value,
+            
+            // References
+            ref1Name: document.getElementById('ref1Name').value,
+            ref1Title: document.getElementById('ref1Title').value,
+            ref1Company: document.getElementById('ref1Company').value,
+            ref1Phone: document.getElementById('ref1Phone').value,
+            ref1Email: document.getElementById('ref1Email').value,
+            ref1Relationship: document.getElementById('ref1Relationship').value,
+            
+            ref2Name: document.getElementById('ref2Name').value,
+            ref2Title: document.getElementById('ref2Title').value,
+            ref2Company: document.getElementById('ref2Company').value,
+            ref2Phone: document.getElementById('ref2Phone').value,
+            ref2Email: document.getElementById('ref2Email').value,
+            ref2Relationship: document.getElementById('ref2Relationship').value
+        };
+
+        // Get file information (demo only)
+        const resumeFile = document.getElementById('resume').files[0];
+        const coverLetterFile = document.getElementById('coverLetter').files[0];
+
+        // Create email content
+        const jobTitle = document.getElementById('applicationJobTitle').textContent.replace('Position: ', '');
+        const subject = `Remote Employment Application - ${jobTitle} - ${formData.firstName} ${formData.lastName}`;
+        
+        let emailBody = `Dear HR Team,\n\nPlease find below the remote employment application details for ${jobTitle}:\n\n`;
+        emailBody += `APPLICANT INFORMATION:\n`;
+        emailBody += `Name: ${formData.firstName} ${formData.lastName}\n`;
+        emailBody += `Email: ${formData.email}\n`;
+        emailBody += `Phone: ${formData.phone}\n`;
+        emailBody += `Address: ${formData.address}, ${formData.city}, ${formData.state} ${formData.zipCode}\n\n`;
+        
+        emailBody += `EMPLOYMENT DETAILS:\n`;
+        emailBody += `Desired Salary: ${formData.salaryRange || 'Not specified'}\n`;
+        emailBody += `Available Start Date: ${formData.startDate}\n`;
+        emailBody += `Work Authorization: ${formData.workAuthorization}\n`;
+        emailBody += `Reliable Internet for Remote Work: ${formData.transportation}\n\n`;
+        
+        emailBody += `EDUCATION:\n`;
+        emailBody += `Highest Education: ${formData.education}\n`;
+        emailBody += `Field of Study: ${formData.fieldOfStudy || 'Not specified'}\n`;
+        emailBody += `School: ${formData.schoolName || 'Not specified'}\n`;
+        emailBody += `Graduation Year: ${formData.graduationYear || 'Not specified'}\n\n`;
+        
+        emailBody += `SECURITY QUESTIONS:\n`;
+        emailBody += `Why interested in position: ${formData.whyPosition}\n\n`;
+        emailBody += `Healthcare experience: ${formData.experience}\n\n`;
+        emailBody += `Handling challenges: ${formData.challengingSituations}\n\n`;
+        emailBody += `Motivation: ${formData.motivation}\n\n`;
+        
+        if (formData.licenses || formData.certifications) {
+            emailBody += `LICENSES & CERTIFICATIONS:\n`;
+            if (formData.licenses) emailBody += `Licenses: ${formData.licenses}\n`;
+            if (formData.certifications) emailBody += `Certifications: ${formData.certifications}\n\n`;
+        }
+        
+        emailBody += `REFERENCES:\n`;
+        if (formData.ref1Name) {
+            emailBody += `Reference 1: ${formData.ref1Name}, ${formData.ref1Title || 'N/A'}\n`;
+            emailBody += `Company: ${formData.ref1Company || 'N/A'}, Phone: ${formData.ref1Phone || 'N/A'}\n`;
+            emailBody += `Email: ${formData.ref1Email || 'N/A'}, Relationship: ${formData.ref1Relationship || 'N/A'}\n\n`;
+        }
+        if (formData.ref2Name) {
+            emailBody += `Reference 2: ${formData.ref2Name}, ${formData.ref2Title || 'N/A'}\n`;
+            emailBody += `Company: ${formData.ref2Company || 'N/A'}, Phone: ${formData.ref2Phone || 'N/A'}\n`;
+            emailBody += `Email: ${formData.ref2Email || 'N/A'}, Relationship: ${formData.ref2Relationship || 'N/A'}\n\n`;
+        }
+        
+        if (resumeFile || coverLetterFile) {
+            emailBody += `DOCUMENTS ATTACHED (Demo - files not actually sent):\n`;
+            if (resumeFile) emailBody += `Resume: ${resumeFile.name}\n`;
+            if (coverLetterFile) emailBody += `Cover Letter: ${coverLetterFile.name}\n\n`;
+        }
+        
+        emailBody += `NOTE: This application was submitted for a REMOTE POSITION through the demo careers portal.\n\n`;
+        emailBody += `Best regards,\n${formData.firstName} ${formData.lastName}`;
+
+        // Open email client
+        window.open(`mailto:cindyturpin61@proton.me?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`, '_blank');
+        
+        // Show success message
+        alert(`Remote Application Submitted!\n\nThank you ${formData.firstName}! Your application for the remote position "${jobTitle}" has been prepared and your email client should open with the application details.\n\nIn a real system, this would be securely stored in a database and you'd receive a confirmation email.`);
+        
+        closeApplicationForm();
+    });
+
+    // Close modals when clicking outside
+    document.getElementById('jobModal').addEventListener('click', function(e) {
+        if (e.target === this) closeJobModal();
+    });
+
+    document.getElementById('loginModal').addEventListener('click', function(e) {
+        if (e.target === this) closeLoginModal();
+    });
+
+    document.getElementById('jobFormModal').addEventListener('click', function(e) {
+        if (e.target === this) closeJobForm();
+    });
+
+    document.getElementById('applicationModal').addEventListener('click', function(e) {
+        if (e.target === this) closeApplicationForm();
+    });
+
+    // Close modals with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeJobModal();
+            closeLoginModal();
+            closeJobForm();
+            closeApplicationForm();
+        }
+    });
+
+    // Job Alert Subscription
+    function subscribeJobAlerts() {
+        const email = document.getElementById('jobAlertEmail').value;
+        if (!email) {
+            alert('Please enter your email address');
+            return;
+        }
+        
+        const subject = 'Job Alert Subscription - Behavioral Healthcare LLC';
+        const body = `New Job Alert Subscription:\n\nEmail: ${email}\nSubscribed: ${new Date().toLocaleString()}\nInterest: Remote Healthcare Positions\n\nPlease add this email to our job alert system for immediate notifications of new remote positions.`;
+        
+        window.open(`mailto:cindyturpin61@proton.me?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, '_blank');
+        
+        document.getElementById('jobAlertEmail').value = '';
+        alert('🎉 Success! You\'ll receive instant alerts for new remote positions. Check your email for confirmation!');
+    }
+
+    // Quick Apply Functions
+    function showQuickApply() {
+        document.getElementById('quickApplyModal').classList.remove('hidden');
+        document.getElementById('quickApplyModal').classList.add('flex');
+    }
+
+    function closeQuickApply() {
+        document.getElementById('quickApplyModal').classList.add('hidden');
+        document.getElementById('quickApplyModal').classList.remove('flex');
+        document.getElementById('quickApplyForm').reset();
+    }
+
+    // Quick Apply Form Submission
+    document.getElementById('quickApplyForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = {
+            name: document.getElementById('quickName').value,
+            email: document.getElementById('quickEmail').value,
+            phone: document.getElementById('quickPhone').value,
+            position: document.getElementById('quickPosition').value,
+            experience: document.getElementById('quickExperience').value
+        };
+
+        const subject = `🚀 QUICK APPLICATION - ${formData.name} - Remote Position Interest`;
+        let body = `URGENT: Quick Application Received\n\n`;
+        body += `Applicant: ${formData.name}\n`;
+        body += `Email: ${formData.email}\n`;
+        body += `Phone: ${formData.phone}\n`;
+        body += `Position Interest: ${formData.position}\n`;
+        body += `Experience: ${formData.experience || 'Not provided'}\n\n`;
+        body += `Applied: ${new Date().toLocaleString()}\n`;
+        body += `Source: Quick Apply Form\n\n`;
+        body += `ACTION REQUIRED: Contact within 24 hours as promised!\n\n`;
+        body += `This candidate used our fast-track application process and expects rapid response.`;
+
+        window.open(`mailto:cindyturpin61@proton.me?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, '_blank');
+        
+        alert(`🎉 Application Submitted Successfully!\n\nThank you ${formData.name}! We'll contact you within 24 hours about remote opportunities matching your interests.\n\nCheck your email for confirmation and next steps.`);
+        
+        closeQuickApply();
+    });
+
+    // Close quick apply modal when clicking outside
+    document.getElementById('quickApplyModal').addEventListener('click', function(e) {
+        if (e.target === this) closeQuickApply();
+    });
+
+    // Lead Magnet Download Functions
+    function downloadGuide(guideType) {
+        let guideName = '';
+        let guideContent = '';
+        
+        switch(guideType) {
+            case 'remote-work':
+                guideName = 'Remote Healthcare Jobs Guide';
+                guideContent = `REMOTE HEALTHCARE JOBS GUIDE\n\n50+ TOP REMOTE JOB BOARDS:\n• FlexJobs.com\n• Remote.co\n• We Work Remotely\n• AngelList\n• LinkedIn Remote Jobs\n• Indeed Remote\n• ZipRecruiter Remote\n• Glassdoor Remote\n• Monster Remote\n• CareerBuilder Remote\n\nINTERVIEW TIPS FOR VIDEO CALLS:\n• Test technology beforehand\n• Professional background\n• Good lighting setup\n• Clear audio quality\n• Dress professionally\n• Maintain eye contact\n• Have backup internet\n\nHOME OFFICE SETUP:\n• Ergonomic chair\n• Proper desk height\n• Good lighting\n• Reliable internet\n• Noise cancellation\n• Professional backdrop\n\nSALARY NEGOTIATION SCRIPTS:\n• Research market rates\n• Highlight remote value\n• Emphasize cost savings\n• Present total compensation\n• Be flexible on benefits`;
+                break;
+            case 'salary-calculator':
+                guideName = 'Healthcare Salary Calculator';
+                guideContent = `HEALTHCARE REMOTE SALARY RANGES 2024\n\nDATA ANALYST:\n• Entry Level: $45k-$55k\n• Mid Level: $55k-$75k\n• Senior Level: $75k-$95k\n\nFINANCE SPECIALIST:\n• Entry Level: $40k-$50k\n• Mid Level: $50k-$70k\n• Senior Level: $70k-$85k\n\nLCSW/THERAPIST:\n• Entry Level: $55k-$65k\n• Mid Level: $65k-$85k\n• Senior Level: $85k-$110k\n\nMARKETING COORDINATOR:\n• Entry Level: $35k-$45k\n• Mid Level: $45k-$60k\n• Senior Level: $60k-$75k\n\nHR SPECIALIST:\n• Entry Level: $40k-$48k\n• Mid Level: $48k-$65k\n• Senior Level: $65k-$80k\n\nLOCATION ADJUSTMENTS:\n• Major Cities: +15-25%\n• Rural Areas: -10-15%\n• Remote Premium: +5-10%\```
